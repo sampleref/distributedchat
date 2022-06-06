@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Distributed Chat WebSocket Example</title>
+    <link rel="stylesheet" href="/css/dchat.css">
+    <script src="/js/dchat.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Message To:</th>
+        <th></th>
+    </tr>
+    <tr>
+        </td>
+        <td>
+            <input id="toaddress" type="text" size="10">
+        </td>
+    </tr>
+    <tr>
+        <th>Enter Message:</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <input id="symbol" type="text" size="10">
+        </td>
+        <td>
+            <input id="add" type="button" value="Send"
+                   onclick="sendMessagePayload(document.getElementById('symbol').value); return false;">
+        </td>
+    </tr>
+</table>
+</br></br></br></br></br>
+
+<b>Connected As:</b>
+<input id="uname" type="text" size="10">
+<a href="#" onclick="launchWebSocket(); return false;">Connect</a>&nbsp;&nbsp;
+<a href="#" onclick="closeWebSocket(); return false;">Disconnect</a>
+<br/><br/><br/>
+<a href="#" onclick="clearScreen(); return false;">Clear</a>
+<div id="output"></div>
+</body>
+</html>
