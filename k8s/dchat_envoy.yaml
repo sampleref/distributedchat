@@ -16,7 +16,7 @@ spec:
       protocol: TCP
       targetPort: 9000
   externalIPs:
-    - 192.168.49.2
+    - <EXTERNAL_IP>
 ---
 apiVersion: apps/v1
 kind: Deployment
